@@ -1,0 +1,14 @@
+{
+    "name": "Public repo highlighter",
+    "description": "Highlights public Github repositories",
+    "version": "0.1",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "js": ["highlight.js"],
+            "run_at": "document_end"
+        }
+    ],   
+    "permissions": ["activeTab"]
+}   
